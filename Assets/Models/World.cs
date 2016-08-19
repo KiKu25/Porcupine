@@ -5,29 +5,13 @@ public class World
 {
 
     Tile[,] tiles;
-    int width;
-
-    public int Width
-    {
-        get
-        {
-            return width;
-        }
-    }
-    int height;
-
-    public int Height
-    {
-        get
-        {
-            return height;
-        }
-    }
+    public int Width { get; protected set; }
+    public int Height { get; protected set; }
 
     public World(int width = 100, int height = 100)
     {
-        this.width = width;
-        this.height = height;
+        this.Width = width;
+        this.Height = height;
 
         tiles = new Tile[width, height];
 
@@ -45,9 +29,9 @@ public class World
     public void RandomizeTiles()
     {
         Debug.Log("RadomizeTiles.");
-        for (int x = 0; x < width; x++)
+        for (int x = 0; x < Width; x++)
         {
-            for (int y = 0; y < height; y++)
+            for (int y = 0; y < Height; y++)
             {
                 if (Random.Range(0, 2) == 0)
                 {
@@ -63,7 +47,7 @@ public class World
 
     public Tile GetTileAt(int x, int y)
     {
-        if (x > width || x < 0 || y > width || y < 0)
+        if (x > Width || x < 0 || y > Width || y < 0)
         {
             Debug.LogError("Tile ( " + x + ", " + y + ") is out of range.");
             return null;

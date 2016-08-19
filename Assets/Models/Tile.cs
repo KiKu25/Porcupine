@@ -15,14 +15,14 @@ public class Tile
     InstalledObject instaledObject;
 
     World world;
-    int x;
-    int y;
+    public int X { get; protected set; }
+    public int Y { get; protected set; }
 
     public Tile(World world, int x, int y)
     {
         this.world = world;
-        this.x = x;
-        this.y = y;
+        this.X = x;
+        this.Y = y;
     }
 
     public void RegisterTileChangedCallback(Action<Tile> callback)
@@ -35,34 +35,9 @@ public class Tile
         cbTileTypeChanged -= callback;
     }
 
-    public int X
-    {
-        get
-        {
-            return x;
-        }
-
-        set
-        {
-            x = value;
-        }
-    }
-
-    public int Y
-    {
-        get
-        {
-            return y;
-        }
-    }
-
     public TileType Type
     {
-        get
-        {
-            return type;
-        }
-
+        get { return type; }
         set
         {
             TileType oldType = type;

@@ -4,21 +4,30 @@ using System;
 
 public class WorldController : MonoBehaviour {
 
+    public static WorldController Instance { get; protected set; }
+
     public Sprite floorSprite;
 
-    World world;
+    public World World { get; protected set; }
 
-	void Start () { 
+    void Start ()
+    {
+        if (Instance != null)
+        {
+            Debug.LogError("There should never be two world controllers.");
+        }
+        Instance = this;
+
         //Create the world with Empty tiles.
-        world = new World();
+        World = new World();
 
         //Create a GameObject for each of our tiles, so they show visually.
-        for (int x = 0; x < world.Width; x++)
+        for (int x = 0; x < World.Width; x++)
         {
-            for (int y = 0; y < world.Height; y++)
+            for (int y = 0; y < World.Height; y++)
             {
                 GameObject tile_go = new GameObject();
-                Tile tile_data = world.GetTileAt(x, y);
+                Tile tile_data = World.GetTileAt(x, y);
                 tile_go.name = "Tile_" + x + "_" + y;
                 tile_go.transform.position = new Vector3(tile_data.X, tile_data.Y, 0);
                 tile_go.transform.SetParent(this.transform, true);
@@ -31,10 +40,11 @@ public class WorldController : MonoBehaviour {
             }
         }
 
-        world.RandomizeTiles();
+        World.RandomizeTiles();
 	}
 	
-	void Update () {
+	void Update ()
+    {
 	
 	}
 
