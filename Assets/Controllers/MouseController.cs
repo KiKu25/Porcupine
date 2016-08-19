@@ -7,7 +7,7 @@ public class MouseController : MonoBehaviour {
 
     public GameObject circlCursorPrefab;
 
-    Tile.TileType buldModeTile = Tile.TileType.Floor;
+    TileType buldModeTile = TileType.Floor;
 
     Vector3 lastFramePosition;
     Vector3 currFramePosition;
@@ -19,8 +19,6 @@ public class MouseController : MonoBehaviour {
     void Start ()
     {
         dragPreviwGameObjects = new List<GameObject>();
-
-        SimplePool.Preload(circlCursorPrefab, 100);
 	}
 
 	void Update ()
@@ -145,11 +143,11 @@ public class MouseController : MonoBehaviour {
 
     public void SetMode_BuildFloor()
     {
-        buldModeTile = Tile.TileType.Floor;
+        buldModeTile = TileType.Floor;
     }
 
     public void SetMode_Bulldoze()
     {
-        buldModeTile = Tile.TileType.Empty;
+        buldModeTile = TileType.Empty;
     }
 }
