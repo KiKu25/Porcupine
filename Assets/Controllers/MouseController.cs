@@ -1,9 +1,13 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
+using UnityEditor.Events;
 
 public class MouseController : MonoBehaviour {
 
     public GameObject circlCursorPrefab;
+
+    Tile.TileType buldModeTile = Tile.TileType.Floor;
 
     Vector3 lastFramePosition;
     Vector3 currFramePosition;
@@ -50,6 +54,12 @@ public class MouseController : MonoBehaviour {
 
     void UpdateDragging()
     {
+        //If we are ovwr a UI element, bail out.
+        if ( EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
         //Star Drag.
         if (Input.GetMouseButtonDown(0))
         {
@@ -112,7 +122,7 @@ public class MouseController : MonoBehaviour {
                     Tile t = WorldController.Instance.World.GetTileAt(x, y);
                     if (t != null)
                     {
-                        t.Type = Tile.TileType.Floor;
+                        t.Type = buldModeTile;
                     }
                 }
             }
@@ -131,5 +141,15 @@ public class MouseController : MonoBehaviour {
         Camera.main.orthographicSize -= Camera.main.orthographicSize * Input.GetAxis("Mouse ScrollWheel");
 
         Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize, 3f, 25f);
+    }
+
+    public void SetMode_BuildFloor()
+    {
+        buldModeTile = Tile.TileType.Floor;
+    }
+
+    public void SetMode_Bulldoze()
+    {
+        buldModeTile = Tile.TileType.Empty;
     }
 }

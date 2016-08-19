@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Porcupine.CSharp", "Porcupine.CSharp.csproj", "{8B275C22-E63E-56AD-BAFE-0301FB5551A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Porcupine.CSharp.Editor", "Porcupine.CSharp.Editor.csproj", "{FB99B6C0-FF69-E8B4-E488-D987FA989D6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{8B275C22-E63E-56AD-BAFE-0301FB5551A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B275C22-E63E-56AD-BAFE-0301FB5551A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B275C22-E63E-56AD-BAFE-0301FB5551A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB99B6C0-FF69-E8B4-E488-D987FA989D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB99B6C0-FF69-E8B4-E488-D987FA989D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB99B6C0-FF69-E8B4-E488-D987FA989D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB99B6C0-FF69-E8B4-E488-D987FA989D6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
