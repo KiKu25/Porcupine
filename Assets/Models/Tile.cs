@@ -10,7 +10,7 @@ public class Tile
 
     Action<Tile> cbTileTypeChanged;
 
-    LooseObject looseObject;
+    LooseObject LooseObject;
     InstalledObject instaledObject;
 
     World world;
@@ -45,5 +45,23 @@ public class Tile
             if (cbTileTypeChanged != null && oldType != type)
                 cbTileTypeChanged(this);
         }
+    }
+
+    public bool PlaceObject(InstalledObject objInstance)
+    {
+        if (objInstance == null)
+        {
+            //We are uninstalling whatever was here befor.
+            instaledObject = null;
+            return true;
+        }
+
+        if (instaledObject != null)
+        {
+            Debug.LogError("Trying to assign an installed object to a tile that alredy has one!");
+            return false;
+        }
+        instaledObject = objInstance;
+        return true;
     }
 }

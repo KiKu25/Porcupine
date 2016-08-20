@@ -1,0 +1,681 @@
+fileFormatVersion: 2
+guid: bfb86f4615d628a47b6f84aa0a2c71d7
+timeCreated: 1471691158
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Wall_
+    21300002: Wall_S
+    21300004: Wall_2
+    21300006: Wall_3
+    21300008: Wall_NES
+    21300010: Wall_W
+    21300012: Wall_E
+    21300014: Wall_NSW
+    21300016: Wall_8
+    21300018: Wall_NESW
+    21300020: Wall_10
+    21300022: Wall_ES
+    21300024: Wall_EW
+    21300026: Wall_SW
+    21300028: Wall_N
+    21300030: Wall_15
+    21300032: Wall_16
+    21300034: Wall_17
+    21300036: Wall_NS
+    21300038: Wall_19
+    21300040: Wall_NE
+    21300042: Wall_21
+    21300044: Wall_NW
+    21300046: Wall_23
+    21300048: Wall_NEW
+    21300050: Wall_25
+    21300052: Wall_ES_solid
+    21300054: Wall_ESW_solid
+    21300056: Wall_SW_solid
+    21300058: Wall_NES_solid
+    21300060: Wall_all
+    21300062: Wall_NSW_solid
+    21300064: Wall_32
+    21300066: Wall_ESW
+    21300068: Wall_34
+    21300070: Wall_NE_solid
+    21300072: Wall_NEW_solid
+    21300074: Wall_NW_solid
+    21300076: Wall_38
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Wall_
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_S
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NES
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_W
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_E
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NSW
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NESW
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_ES
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_EW
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_SW
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_N
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_16
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NS
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NE
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NW
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NEW
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_ES_solid
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_ESW_solid
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_SW_solid
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NES_solid
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_all
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NSW_solid
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_32
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_ESW
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_34
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NE_solid
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NEW_solid
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_NW_solid
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    - name: Wall_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 32}
+        - {x: 0, y: 0}
+        - {x: 32, y: 0}
+        - {x: 32, y: 32}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
