@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class InstalledObject {
 
-    Tile tile;
+    public Tile tile { get; protected set; }
 
-    string objectType;
+    public string objectType { get; protected set; }
 
     //This is a multipler. So a value of "2" here, means you move twices as slowly.
     //SPECIAL: If movementCost = 0, then this tile is impassible.
@@ -13,6 +14,8 @@ public class InstalledObject {
 
     int width;
     int height;
+
+    Action<InstalledObject> cbOnChanged;
 
     protected InstalledObject()
     {
@@ -47,5 +50,15 @@ public class InstalledObject {
         }
 
         return obj;
+    }
+
+    public void RegisterOnChangeCallBack(Action<InstalledObject> callbackFunc)
+    {
+        cbOnChanged += callbackFunc;
+    }
+
+    public void UnregisterOnChangeCallBack(Action<InstalledObject> callbackFunc)
+    {
+        cbOnChanged -= callbackFunc;
     }
 }

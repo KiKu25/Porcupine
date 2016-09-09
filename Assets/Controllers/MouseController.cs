@@ -128,7 +128,7 @@ public class MouseController : MonoBehaviour {
                             //Create a InstalledObject and assign it to a tile.
 
                             //TODO: Right now, we're just going to assume walls.
-                            //WorldController.Instance.World.PlaceInstalledObject(buildModeObjectType, t);
+                            WorldController.Instance.World.PlaceInstalledObject(buildModeObjectType, t);
                         }
                         else
                         {
