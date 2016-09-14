@@ -11,7 +11,7 @@ public class Tile
     Action<Tile> cbTileTypeChanged;
 
     LooseObject LooseObject;
-    InstalledObject instaledObject;
+    public InstalledObject instaledObject { get; protected set; }
 
     World world;
     public int X { get; protected set; }

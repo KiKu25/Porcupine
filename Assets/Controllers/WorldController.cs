@@ -7,16 +7,27 @@ public class WorldController : MonoBehaviour {
 
     public static WorldController Instance { get; protected set; }
 
-    public Sprite wallSprite;
     public Sprite floorSprite;
 
     Dictionary<Tile, GameObject> tileGameObjectMap;
     Dictionary<InstalledObject, GameObject> installedObjectGameObjectMap;
 
+    Dictionary<String, Sprite> installedObejectSprites;
+
     public World World { get; protected set; }
 
     void Start ()
     {
+        installedObejectSprites = new Dictionary<string, Sprite>();
+        Sprite[] sprites = Resources.LoadAll<Sprite>("Images/InstalledObjects/");
+
+        Debug.Log("LOADING RESOURCES");
+        foreach(Sprite s in sprites)
+        {
+            Debug.Log(s);
+            installedObejectSprites[s.name] = s;
+        }
+
         if (Instance != null)
         {
             Debug.LogError("There should never be two world controllers.");
@@ -137,10 +148,60 @@ public class WorldController : MonoBehaviour {
         obj_go.name = obj.objectType + "_" + obj.tile.X + "_" + obj.tile.Y;
         obj_go.transform.position = new Vector3(obj.tile.X, obj.tile.Y, 0);
         obj_go.transform.SetParent(this.transform, true);
-
-        obj_go.AddComponent<SpriteRenderer>().sprite = wallSprite;
-
+        
+        obj_go.AddComponent<SpriteRenderer>().sprite = GetSpriteForInstalledObject(obj);
+        
         obj.RegisterOnChangeCallBack(OnInstalledObjectChanged);
+    }
+
+    Sprite GetSpriteForInstalledObject(InstalledObject obj)
+    {
+        if (obj.linksToNeighbour == false)
+        {
+            return installedObejectSprites[obj.objectType];
+        }
+
+        // Otherwies, the sprite name is more comlicated.
+
+        string spriteName = obj.objectType + "_";
+
+        // Check for neighbours North, East, South, West.
+
+        int x = obj.tile.X;
+        int y = obj.tile.Y;
+
+        Tile t;
+
+        t = World.GetTileAt(x, y + 1);
+        if (t != null && t.instaledObject != null && t.instaledObject.objectType == obj.objectType)
+        {
+            spriteName += "N";
+        }
+
+        t = World.GetTileAt(x + 1, y);
+        if (t != null && t.instaledObject != null && t.instaledObject.objectType == obj.objectType)
+        {
+            spriteName += "E";
+        }
+
+        t = World.GetTileAt(x, y - 1);
+        if (t != null && t.instaledObject != null && t.instaledObject.objectType == obj.objectType)
+        {
+            spriteName += "S";
+        }
+
+        t = World.GetTileAt(x + 1, y);
+        if (t != null && t.instaledObject != null && t.instaledObject.objectType == obj.objectType)
+        {
+            spriteName += "W";
+        }
+
+        if (installedObejectSprites.ContainsKey(spriteName) == false)
+        {
+            Debug.LogError("GetSpriteForInstalledObject -- No sprite with name: " + spriteName);
+            return null;
+        }
+        return installedObejectSprites[spriteName];
     }
 
     void OnInstalledObjectChanged(InstalledObject obj)

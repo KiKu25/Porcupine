@@ -38,7 +38,12 @@ public class World
     {
         installedObjectPrototyps = new Dictionary<string, InstalledObject>();
 
-        installedObjectPrototyps.Add("Wall", InstalledObject.CreatePrototype("Wall", 0, 1, 1));
+        installedObjectPrototyps.Add("Wall", InstalledObject.CreatePrototype("Wall",
+                                                                             0, // Impassable
+                                                                             1, // Width
+                                                                             1,  // Height
+                                                                             true // Links To Neighours and "sort of" becomes a larger object
+                                                                             ));
     }
 
     public void RandomizeTiles()
