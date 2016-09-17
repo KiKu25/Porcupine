@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: bfb86f4615d628a47b6f84aa0a2c71d7
-timeCreated: 1473871423
+timeCreated: 1474133972
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -299,96 +299,6 @@ TextureImporter:
         - {x: 0, y: 0}
         - {x: 32, y: 0}
         - {x: 32, y: 32}
-    - name: Wall_ES_solid
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: 32}
-        - {x: 0, y: 0}
-        - {x: 32, y: 0}
-        - {x: 32, y: 32}
-    - name: Wall_ESW_solid
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: 32}
-        - {x: 0, y: 0}
-        - {x: 32, y: 0}
-        - {x: 32, y: 32}
-    - name: Wall_SW_solid
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 96
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: 32}
-        - {x: 0, y: 0}
-        - {x: 32, y: 0}
-        - {x: 32, y: 32}
-    - name: Wall_NES_solid
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 64
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: 32}
-        - {x: 0, y: 0}
-        - {x: 32, y: 0}
-        - {x: 32, y: 32}
-    - name: Wall_all
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 64
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: 32}
-        - {x: 0, y: 0}
-        - {x: 32, y: 0}
-        - {x: 32, y: 32}
-    - name: Wall_NSW_solid
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 64
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: 32}
-        - {x: 0, y: 0}
-        - {x: 32, y: 0}
-        - {x: 32, y: 32}
     - name: Wall_ESW
       rect:
         serializedVersion: 2
@@ -404,41 +314,11 @@ TextureImporter:
         - {x: 0, y: 0}
         - {x: 32, y: 0}
         - {x: 32, y: 32}
-    - name: Wall_NE_solid
+    - name: Wall_S
       rect:
         serializedVersion: 2
-        x: 320
-        y: 32
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: 32}
-        - {x: 0, y: 0}
-        - {x: 32, y: 0}
-        - {x: 32, y: 32}
-    - name: Wall_NEW_solid
-      rect:
-        serializedVersion: 2
-        x: 352
-        y: 32
-        width: 32
-        height: 32
-      alignment: 6
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: 32}
-        - {x: 0, y: 0}
-        - {x: 32, y: 0}
-        - {x: 32, y: 32}
-    - name: Wall_NW_solid
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 32
+        x: 192
+        y: 128
         width: 32
         height: 32
       alignment: 6
