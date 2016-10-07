@@ -87,7 +87,6 @@ public class Tile
         }
 
         // objInstance isn't null
-
         if (furniture != null)
         {
             Debug.LogError("Trying to assign a furniture to a tile that already has one!");
